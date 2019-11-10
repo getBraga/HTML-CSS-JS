@@ -1,0 +1,189 @@
+/*Reset*/
+
+body, h3, h4, ul, li, a {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+	 text-decoration: none;
+}
+* {
+	 box-sizing: border-box;
+}
+
+
+/*Fim Reset*/
+
+/*Menu*/
+
+.header-menu {
+	 padding: 30px;
+	 display: flex;
+	 background: #f8f8f8;
+	 /*ead4aa*/
+}
+
+.menu-me {
+	 flex-grow: 1;
+	 margin-left: 60px;
+	 color: #897b7b;
+	 font-size: 1.5em;
+}
+
+.header-menu ul {
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin-right: 60px;
+}
+.header-menu ul li {
+	 margin-left: 20px;
+}
+.header-menu a {
+   color: #897b7b;
+	 font-size: 1.5em;
+	 text-transform: uppercase;
+
+}
+
+@media (max-width: 739px) {
+	 .header-menu {
+	 	 flex-direction: column;
+	 	 
+	 }
+	 .header-menu ul{
+     
+     margin-top: 20px;
+
+	 	
+	 }
+}
+
+/*Fim Menu*/
+
+/*Main*/
+
+.main-container {
+	 background:#1abc9c;
+	 text-align: center;
+	 padding: 80px;
+}
+.main-container img {
+	 border-radius: 50%;
+}
+.main h3 {
+	margin-bottom: 60px;
+	color: #fff;
+	letter-spacing: .05em;
+	font-size: 2.0em;
+	font-family: inherit;
+}
+
+.main h4 {
+	margin-top: 60px;
+	color: #fff;
+	letter-spacing: .05em;
+	font-size: 1.5em;
+	font-family: inherit;
+	font-weight: normal;
+}
+
+.ultimo-main {
+	 background: #474e5d;
+	 padding: 100px;
+	 text-align: center;
+}
+.ultimo-main p {
+	 color: #fff;
+	 font-size: 1.125em;
+}
+.ultimo-main a {
+	 padding: 15px 40px;
+	 position: relative;
+	 top: 25px;
+	 border-radius: 10px;
+	 background: #fff;
+	 color: #000;
+}
+
+.ultimo-main a:hover {
+	 background: #7a8499;
+}
+
+/*Fim main*/
+
+/*Produtos*/
+.produtos-container {
+	 display: flex;
+	 text-align: center;
+
+}
+
+.produtos-container img {
+	 width: 100%;
+}
+.meu-h3 {
+	 text-align: center;
+	 margin-top: 60px;
+	 font-weight: normal;
+	 font-size: 1.5em;
+}
+.passaro {
+	 text-align: center;
+	 margin: 0 18px auto;
+}
+
+.passaro p {
+	 max-width: 450px;
+}
+@media (max-width: 739px) {
+	 .produtos-container {
+	 	 flex-direction: column;
+	 	 
+	 }
+	 .produtos-container img{
+     
+      max-width: 90%;
+      margin-top: 10px;
+      margin-bottom: 60px;
+
+	     
+	 }
+	 .meu-h3 {
+	 margin-top: 40px;
+	 margin-bottom: 60px;
+	 
+}
+	 .produtos-container p  {
+	 	  
+	 	] max-width: 800px;
+	 	  text-align: center;
+	    margin:  0 auto;
+	 }
+}
+
+
+/*Fim produtos*/
+
+/*Footer*/
+.footer {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 margin-top: 60px;
+	 padding: 20px;
+	 background: #2F2F2F;
+	 color: #fff;
+}
+
+
+/* JS */
+
+.js-scroll {
+	opacity: 0;
+	transform: translate3d(-30px, 0, 0);
+	transition: .5s;
+}
+
+.js-scroll.ativo{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
