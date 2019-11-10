@@ -1,0 +1,296 @@
+body, h1, h2, ul, li, a, span, p {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-weight: normal;
+   color: black;
+}
+
+ ul li {
+  list-style: none;
+}
+
+* {
+   box-sizing: border-box;
+}
+img {
+   display: block;
+   max-width: 100%;
+   text-align: center;
+}
+
+
+/* Header */
+.header-menu {
+   display: flex;
+   flex-wrap: wrap;
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   width: 100%;
+   background: #fff;
+   align-items: center;
+   padding: 1.25rem;
+   /* border-bottom: 0.1px solid #c9c9c9 ; */
+   box-shadow:  0.1px 0.1px 10px 0.1px rgba(0, 0, 0, 0.4);
+}
+.header-menu h1 {
+   flex: 1;
+   font-size: 1rem;
+   letter-spacing: .2em;
+}
+.header-menu span {
+   padding: 10px;
+}
+
+.header-menu span:hover {
+   background: #cccccc;
+   cursor: pointer;
+}
+.header-menu ul li {
+   display: inline;
+   margin-left: 20px;
+   padding: 10px;
+   text-align: center;
+}
+.header-menu ul li a {
+    padding: 10px;
+}
+.header-menu ul li:hover {
+   background: #cccccc;
+   cursor: pointer;
+}
+.img-menu span {
+  position: relative;
+  top: -60px;
+  left: 20px;
+  letter-spacing: .2em;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #757575;
+
+}
+.img-menu img {
+  display: block;
+  text-align: center;
+   width: 100%;
+}
+/* Fim Header */
+
+/* About */
+.about {
+   display: flex;
+   margin: 60px auto;
+   max-width: 960px;
+   justify-content: center;
+   padding-bottom: 100px;
+   border-bottom: 1px solid #ccc;
+   padding-top: 5rem;
+
+}
+
+.about img {
+   max-width: 100%;  
+   align-self: center;
+   align-items: center;
+   margin: 0 auto;
+   opacity: 0.7;
+   padding-left: 10px;
+   
+}
+.about-text {
+   max-width: 500px;
+   margin-left: 30px;
+  
+}
+.about-text h1 {
+   font-size: 2em;
+   margin: 10px auto;
+   text-align: center;
+   letter-spacing: .2em;
+}
+
+.about-text h2 {
+  font-size: 1em;
+  letter-spacing: .3em;
+  margin: 40px auto;
+  text-align: center;
+}
+.about-text p {
+   line-height: 1.5em;
+}
+.about-text span {
+   background: #f4f4f4;
+   padding: 5px;
+} 
+
+.about-p2 {
+   margin-top: 40px;
+   line-height: 1.5em;
+}
+
+@media(max-width: 600px) {
+   .about {
+       text-align: left;
+       margin: 60px 0 0 0;
+   }
+   .img-about {
+       display: none;
+   }
+
+   .about-text {
+      text-align: left;
+      padding: 0 20px;
+      margin: 0 auto;
+   }
+
+}
+/* Fim About */
+
+/* Our Menu */
+.our-menu {
+   display: flex;
+   justify-content: center;
+   margin: 100px auto;
+   max-width: 1000px;
+   padding-bottom: 100px;
+   border-bottom: 1px solid #ccc;
+   padding-top: 5rem;
+}
+
+.our-menu h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  letter-spacing: .2em;
+}
+.our-menu-p {
+   font-size: 1.2em;
+   text-align: left;
+   margin-top: 30px;
+   padding-left: 10px;
+}
+.p-our-segundo {
+   font-size: 0.875em;
+    margin: 20px 0 50px 0;
+    width: 500px;
+    padding-left: 10px;
+    color: #898989;
+    
+}
+.img-our-menu {
+    margin-left: 60px;
+}
+.img-our-menu img{
+    width: 100%;
+    padding-right: 10px;
+    opacity: 0.7;
+}
+
+
+@media(max-width: 990px) {
+   .our-menu {
+     margin: 0;
+     flex-direction: column;
+   }
+   .our-menu p {
+       max-width: 480px;
+   }
+   .our-menu img {
+      width: 100%;
+   } 
+   
+   .img-our-menu {
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+   }
+
+}
+/* Fim Our Menu */
+
+/* Contato */
+
+.contato {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 5rem;
+}
+.contato  h1 {
+    font-size: 2rem;
+    letter-spacing: .1em;
+    
+} 
+
+.contato  p{
+   font-size: 0.875em;
+   margin: 40px 0;
+} 
+.contato span {
+    font-size: 0.900em;
+    color: #417293;
+    font-weight: bold;
+}
+.contato form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.contato input {
+   border: none;
+   padding: 20px 0 20px 10px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #ccc;
+}
+
+.btn {
+    max-width: 140px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    border: none;
+}
+.btn:hover {
+   background: #bfbfbf;
+}
+
+@media(min-width: 300px) and (max-width: 990px){
+      .contato {
+          padding-top: 100px ;
+      }  
+   }
+
+/* Fim Contato */
+
+/* Footer */
+.footer {
+   width: 100%;
+   height: 10rem;
+   margin-top: 80px;
+   font-size: 0.875em;
+   background: #f1f1f1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+/* Fim footer */
+
+/* JS */
+
+ .js-scroll {
+   opacity: 0;
+   transform: translate3d(-30px, 0, 0);
+   transition: .3s;
+}
+
+.js-scroll.ativo {
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+  
+}
